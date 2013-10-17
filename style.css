@@ -1,0 +1,76 @@
+/* Reset de estilos*/
+
+	* {
+       padding: 0; 
+       margin: 0;
+       border: 0;
+       list-style:none;
+       text-decoration:none;
+	}
+
+/* Estilo pag */
+
+			.fondo{
+				background-color: #FFF;
+				background-repeat: no-repeat;
+				overflow: hidden;
+				position: absolute;
+				z-index: -2;
+				height: 100%;
+				width: 100%;				
+				}
+
+			.transparencia{
+				background-repeat: repeat;
+				overflow: hidden;
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				z-index: -1;
+				opacity: 0.3;
+				}
+
+			.cont{
+				position: absolute;
+				background-color: #69d2e7;
+				width: 350px;
+				height: 200px;
+				top: 200px;
+			}
+
+			.cont1{
+				position: relative;
+				background-color: #ce747e;
+				width: 200px;
+				height: 50px;
+			}
+
+			.cont2{
+				position: relative;
+				background-color: #fc3a52;
+				width: 200px;
+				height: 50px;
+			}
+
+			.cont3{
+				position: relative;
+				background-color: #e4b386;
+				width: 200px;
+				height: 50px;
+			}
+
+			.cont4{
+				position: relative;
+				background-color: #8ac328;
+				width: 200px;
+				height: 50px;
+			}
+
+			.title{
+				float: right;
+				min-height: 320px;
+				font-family: 'Neuton', serif;
+				text-align: center;
+				font-size: 160px;
+				z-index: 2;
+				}
