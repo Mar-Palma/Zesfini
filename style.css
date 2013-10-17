@@ -1,4 +1,4 @@
-/* Reset de estilos*/
+	/* Reset de estilos*/
 
 	* {
        padding: 0; 
@@ -8,7 +8,7 @@
        text-decoration:none;
 	}
 
-/* Estilo pag */
+			/* Estilo fondo */
 
 			.fondo{
 				background-color: #FFF;
@@ -30,47 +30,78 @@
 				opacity: 0.3;
 				}
 
-			.cont{
+
+			/* Menu Link */
+
+			#menu{
 				position: absolute;
-				background-color: #69d2e7;
 				width: 350px;
-				height: 200px;
-				top: 200px;
+				top:200px;
 			}
+
+			#menu ul li{
+				top: 200px;
+				background-color: #639bb3;
+				width: 350px;
+				height: 50px;
+				margin-top: 10px;
+				font-size: 18px;
+				font-family: 'Neuton', serif;
+				padding-bottom: 10px;
+				border-radius: 0px 10px 10px 0px;
+				padding-left: 80px;
+				box-shadow: 5px 0px 10px #000000;
+				-webkit-transition:padding-left 0.8s;
+			}
+
+			#menu ul li:hover{
+				padding: 10px;
+				background-color: #FFFFFF;
+			}
+
+			/* Contenedor de todas las viñetas */
+
+
+			/* Menu bio-blog-letra-contacto */
 
 			.cont1{
 				position: relative;
 				background-color: #ce747e;
-				width: 200px;
+				width: 300px;
 				height: 50px;
 			}
 
 			.cont2{
 				position: relative;
 				background-color: #fc3a52;
-				width: 200px;
+				width: 300px;
 				height: 50px;
 			}
 
 			.cont3{
 				position: relative;
 				background-color: #e4b386;
-				width: 200px;
+				width: 300px;
 				height: 50px;
 			}
 
 			.cont4{
 				position: relative;
 				background-color: #8ac328;
-				width: 200px;
+				width: 300px;
 				height: 50px;
 			}
+		
+			/*Titulo*/
 
 			.title{
+				position: absolute;
+				top: 200px;
+				right: 50px;
 				float: right;
 				min-height: 320px;
 				font-family: 'Neuton', serif;
-				text-align: center;
 				font-size: 160px;
 				z-index: 2;
 				}
+
