@@ -74,6 +74,7 @@
 				top: 200px;
 				right: 50px;
 				float: right;
+				min-height: 400px;
 				font-family: 'Neuton', serif;
 				font-size: 160px;
 				z-index: -1;
@@ -109,7 +110,7 @@
 				position: absolute;
 				top:0px;
 				margin-top: 80px;
-				width: 350px;
+				width: 400px;
 				text-align: justify;
 				background-color: #fa6900;
 				padding: 15px;
@@ -160,6 +161,20 @@
 				background-color: #fa6900;
 				font-family: 'Calibri', serif;
 				font-size: 12px;
+			}
+			
+		/* Otros detalles de Style */
+
+			.bgletras{
+				position: absolute;
+				margin-top: 100px;
+				top: -10px;
+				width: 420px;
+				height: 300px;
+				text-align: justify;
+				background-color: rgba(205,127,50,.3);
+				padding: 15px;
+				z-index: -1;				
 			}
 
 
