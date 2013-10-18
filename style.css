@@ -39,6 +39,9 @@
 				position: absolute;
 				top:240px;
 				left: 0px;
+				font-size: 20px;
+				text-transform: uppercase;
+				font-family: 'Neuton', serif;
 			}
 
 			#menu ul li{
@@ -51,9 +54,6 @@
 				padding-left: 50px;			
 				background-color: #111111;
 				color: #fa6900;
-				font-size: 16px;
-				text-transform: uppercase;
-				font-family: 'Neuton', serif;
 				border-radius: 0px 10px 10px 0px;
 				box-shadow: 5px 0px 10px #000000;
 				-webkit-transition:padding-left .9s;
@@ -80,52 +80,89 @@
 				z-index: 2;
 				}
 
-
-
-
-			/*Bio*/
-
-			.bio1{
-				position: relative;
-				top:550px;
-				right: 300px;
+			.littletitle{
+				position: absolute;
+				top: 350px;
+				right: 50px;
+				float: right;
+				min-height: 320px;
+				font-family: 'Neuton', serif;
+				font-size: 22px;
+				z-index: 2;
 			}
+
+			.littletitle1{
+				position: absolute;
+				top: 420px;
+				right: 50px;
+				float: right;
+				min-height: 320px;
+				font-family: 'Neuton', serif;
+				font-size: 22px;
+				z-index: 3;
+
+			}
+
+			/* Bio */
 
 			.bio{
 				position: absolute;
-				top:0px;
+				top:350px;
 				text-align: justify;
 				background-color: #000;
-				color: #fff;
+				color: #fa6900;
 				padding: 15px;
 				left: 0px;
+				font-family: "Calibri", sans-serif;
+			}
+
+			/* Letras */
+
+			.letras{
+				position: absolute;
+				top:0px;
+				margin-top: 80px;
+				width: 350px;
+				text-align: justify;
+				background-color: #fa6900;
+				padding: 15px;
+				font-family: "calibri", sans-serif;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+
 			}
 
 
+		/* Boton home */
 
 			.bothome{
-
-			}
-
-
-			/*footer*/
-
-			.footer{
-				width: 50px;
-				left: 50px;
-				bottom: 0px;
+				float: left;
+				bottom: 50px;
 				padding: 10px;
+				padding-top: 40px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
 				background-color: #fa6900;
 				font-family: 'Calibri', serif;
 				font-size: 12px;
-				color: #000;
-				text-align: right;
+			}
+
+
+			/* footer */
+
+			.footer{
+				bottom: 0px;
+				padding: 15px;
+				background-color: #fa6900;
+				font-family: 'Calibri', serif;
+				font-size: 12px;
+				border-bottom-right-radius: 10px;
 			}
 
 			.color{
-				width: 5px;
+				width: 1px;
 				bottom:0px;
-				padding: 10px;
+				padding: 15px;
 				background-color: #000;
 				z-index: 4;
 			}
