@@ -1,3 +1,4 @@
+
 	/* Reset de estilos*/
 
 	* {
@@ -6,14 +7,15 @@
        border: 0;
        list-style:none;
        text-decoration:none;
-	}
+       color: #000;
+      }
+
 
 			/* Estilo fondo */
 
 			.fondo{
 				background-color: #FFF;
-				background-repeat: no-repeat;
-				overflow: hidden;
+				background-repeat: repeat-y;
 				position: absolute;
 				z-index: -2;
 				height: 100%;
@@ -35,64 +37,37 @@
 
 			#menu{
 				position: absolute;
-				width: 350px;
-				top:200px;
+				top:240px;
+				left: 0px;
 			}
 
 			#menu ul li{
 				top: 200px;
-				background-color: #639bb3;
-				width: 350px;
-				height: 50px;
-				margin-top: 10px;
-				font-size: 18px;
+				width: 300px;
+				height: 35px;
+				margin-top: 3px;
+				padding-top: 3px;
+				padding-bottom: 5px;
+				padding-left: 50px;			
+				background-color: #111111;
+				color: #fa6900;
+				font-size: 16px;
+				text-transform: uppercase;
 				font-family: 'Neuton', serif;
-				padding-bottom: 10px;
 				border-radius: 0px 10px 10px 0px;
-				padding-left: 80px;
 				box-shadow: 5px 0px 10px #000000;
-				-webkit-transition:padding-left 0.8s;
+				-webkit-transition:padding-left .9s;
+				-ms-transition:padding-left .9s;
+				-moz-transition:padding-left .9s;
 			}
 
 			#menu ul li:hover{
-				padding: 10px;
-				background-color: #FFFFFF;
+				padding: 3px;
+				background-color: #000;
 			}
 
-			/* Contenedor de todas las viñetas */
 
-
-			/* Menu bio-blog-letra-contacto */
-
-			.cont1{
-				position: relative;
-				background-color: #ce747e;
-				width: 300px;
-				height: 50px;
-			}
-
-			.cont2{
-				position: relative;
-				background-color: #fc3a52;
-				width: 300px;
-				height: 50px;
-			}
-
-			.cont3{
-				position: relative;
-				background-color: #e4b386;
-				width: 300px;
-				height: 50px;
-			}
-
-			.cont4{
-				position: relative;
-				background-color: #8ac328;
-				width: 300px;
-				height: 50px;
-			}
-		
-			/*Titulo*/
+			/* Titulo */
 
 			.title{
 				position: absolute;
@@ -105,3 +80,89 @@
 				z-index: 2;
 				}
 
+
+
+
+			/*Bio*/
+
+			.bio1{
+				position: relative;
+				top:550px;
+				right: 300px;
+			}
+
+			.bio{
+				position: absolute;
+				top:0px;
+				text-align: justify;
+				background-color: #000;
+				color: #fff;
+				padding: 15px;
+				left: 0px;
+			}
+
+
+
+			.bothome{
+
+			}
+
+
+			/*footer*/
+
+			.footer{
+				width: 50px;
+				left: 50px;
+				bottom: 0px;
+				padding: 10px;
+				background-color: #fa6900;
+				font-family: 'Calibri', serif;
+				font-size: 12px;
+				color: #000;
+				text-align: right;
+			}
+
+			.color{
+				width: 5px;
+				bottom:0px;
+				padding: 10px;
+				background-color: #000;
+				z-index: 4;
+			}
+
+/* Min res */
+
+@media screen and (max-width:320px){
+			 img {
+ 			max-width:200px;
+ 			}
+	
+ #container{
+ 			width:auto;
+			 } 
+
+		.header h1 a{
+ 			width:auto;
+ 			height:52px;
+ 			background:url(image-small.jpg) no-repeat 50% 0;
+ 			}
+		}
+
+/* Max res*/
+
+@media screen and (min-width:1200px){
+ 			img {
+ 			max-width:1000px;
+ 		}
+
+ #container{
+ 			width:1100px;
+		 }  
+
+ 		.header h1 a{
+ 			width:1100px;
+ 			height:180px;
+ 			background:url(image.jpg) no-repeat 0 0;
+ 		}                          
+
+}
