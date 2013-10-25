@@ -93,6 +93,7 @@ the gridpak.js file to use '.page' as it's container.
 
         .main_content{
             font-size:  0.4em;
+            height: 200px;
         }
 
         .navigation{
@@ -412,7 +413,7 @@ the gridpak.js file to use '.page' as it's container.
 
             .ic1{
                 position: relative;
-                background-color: #e35c35;
+                background-color: #fa6900;
                 border-radius: 40px 40px 40px 40px;
                 height: 50px;
                 width: 50px;
@@ -437,7 +438,7 @@ the gridpak.js file to use '.page' as it's container.
                 padding: 10px;
                 text-align: center;
                 background-color: #000000;
-                color: #e35c35; 
+                color: #fa6900; 
             }
 
             .text{
@@ -457,4 +458,12 @@ the gridpak.js file to use '.page' as it's container.
                  text-align: center;
             }
 
+            /* jQuery Stuff */
+
+            .highlighted {
+            -webkit-box-shadow: 0 0 8px #FFD700;
+            -moz-box-shadow: 0 0 8px #FFD700;
+            box-shadow: 0 0 8px #FFD700;
+            cursor:pointer;
+            }
 
