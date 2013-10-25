@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'icons';
+    src:url('fonts/icons.eot');
+    src:url('fonts/icons.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icons.ttf') format('truetype'),
+        url('fonts/icons.woff') format('woff'),
+        url('fonts/icons.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*="ico"] {
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icoquill:before {
+    content: "\e600";
+}
+.icomusic:before {
+    content: "\e601";
+}
+.icoconnection:before {
+    content: "\e602";
+}
+.icolastfm:before {
+    content: "\e603";
+}
+.icohome:before {
+    content: "\e604";
+}
+.icobook:before {
+    content: "\e605";
+}
+.icotwitter:before {
+    content: "\e606";
+}
+.icowi-fi:before {
+    content: "\e607";
+}
+.icotick:before {
+    content: "\e608";
+}
+.icotimes:before {
+    content: "\e609";
+}
+.icochart-bar:before {
+    content: "\e60a";
+}
+.icoinfo-large:before {
+    content: "\e60b";
+}
+.icosocial-last-fm:before {
+    content: "\e60c";
+}
+.icosocial-skype:before {
+    content: "\e60d";
+}
+.icosocial-twitter:before {
+    content: "\e60e";
+}
+.icopin:before {
+    content: "\e60f";
+}
+.icosort-numerically:before {
+    content: "\e610";
+}
+.icosort-alphabetically:before {
+    content: "\e611";
+}
+.icoinput-checked:before {
+    content: "\e612";
+}
+
+
+/* Fin de Icons */
+
+ /* Reset de estilos*/
+
+* {
+       padding: 0; 
+       margin: 0;
+       border: 0;
+       list-style:none;
+       text-decoration:none;
+       
+ }
+
+
+/*
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+ 
+body,
+html,
+div {
+     margin: 0;
+     padding:0;
+ }
+ 
+/*
+Page is our center aligned 95% width container. We have set it's 'position' as relative
+so that the Gridpak overlay will appear in the correct position. We have also updated
+the gridpak.js file to use '.page' as it's container.
+*/
+.page {
+     margin: 0 auto;
+     max-width: 100%;
+     overflow:hidden;
+     position:relative;
+     background-color: #000;
+}
+
+/* Reusable column setup */
+.col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+    background: #777;
+
+	margin-bottom: 12px;
+}
+
+
+
+    /* 1. 2 Column Grid 0px - 319px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1: 50%
+    Span 2: 100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) and (max-width: 319px) {
+        
+        .row {
+            margin-left:-12px;
+        }
+        .col {
+            border-left-width:12px;
+        	padding:0 12px;
+            height:100px;
+        }
+        
+        .span_6,
+        .header{
+            width: 100%;
+            height: 50px;
+            margin-left:0;
+        }
+
+        .main_content{
+            font-size:  0.75em;
+        }
+
+        .navigation{
+            font-size: 0.5em;
+        }
+
+        .icon1{
+            height: 30px;
+            width: 30px;
+        }
+
+        .main_content p{
+            font-size:  0.3em;
+            color:#000000;
+        }
+         
+        .span_1 {
+            width:50%;
+        }
+        /* Using .col to target ALL columns and make them 100% */
+        .span_2,
+        .col {
+            width:100%;
+            margin-left:0;
+        }
+    }
+
+    /* 2. 6 Column Grid 320px - 919px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1: 15.0%
+    Span 2: 32.0%
+    Span 3: 49.0%
+    Span 4: 66.0%
+    Span 5: 83.0%
+    Span 6: 1000%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 320px) and (max-width: 919px) {
+        
+        .col {
+            margin-left:2%;
+        	padding:0 2%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        .main_content{
+            font-size: 3.5em;
+        }
+
+        .main_content p{
+            font-size:  0.2em;
+            color:#000000;
+        }
+
+        .icon1{
+            height: 50px;
+            width: 50px;
+        }
+
+        .span_1 {
+            width:15.0%;
+        }
+
+        .span_2,
+        .navigation,
+        .media_block {
+            width:32.0%;
+        }
+        .navigation {
+            width:100%;
+            height: 300px;
+            font-size: 0.8em;
+        }
+        .span_3 {
+            width:49.0%;
+        }
+        .span_4,
+        .main_content {
+            width:100.0%;
+            height: 400px;
+        }
+        .span_5 {
+            width:83.0%;
+        }
+        .span_6,
+        .footer,
+        .related_content {
+            width:100%;
+            height: 100px;
+            margin-left:0;
+        }
+        .span_6,
+        .header{
+            width: 100%;
+            height: 50px;
+            margin-left:0;
+        }
+    }
+
+    /* 3. 12 Column Grid 920px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1: 8.33333333333%
+    Span 2: 16.6666666667%
+    Span 3: 25.0%
+    Span 4: 33.3333333333%
+    Span 5: 41.6666666667%
+    Span 6: 50.0%
+    Span 7: 58.3333333333%
+    Span 8: 66.6666666667%
+    Span 9: 75.0%
+    Span 10: 83.3333333333%
+    Span 11: 91.6666666667%
+    Span 12: 100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 920px) {
+        
+        .row {
+            margin-left:-10px;
+        }
+        .col {
+            border-left-width:12px;
+        	padding:0 12px;
+        }
+        
+        .main_content{
+            font-size: 3.7em;
+        }
+
+        .main_content p{
+            font-size:  0.3em;
+            color:#000000;
+        }
+
+        .navigation p{
+            font-size:  1em;
+        }
+        
+        .span_1 {
+            width:8.33333333333%;
+        }
+        .span_2 {
+            width:16.6666666667%;
+        }
+        .span_3,
+        .navigation {
+            width:100.0%;
+            height: 400px;
+        }
+        .span_3,
+        .related_content {
+            width:25.0%;
+            height: 400px;
+        }
+        .span_4,
+        .media_block {
+            width:33.3333333333%;
+            height: 250px;
+        }
+        .span_5 {
+            width:41.6666666667%;
+        }
+        .span_6,
+        .main_content {
+            width:100.0%;
+            height: 600px;
+        }
+        .span_7 {
+            width:58.3333333333%;
+        }
+        .span_8,  {
+            width:66.6666666667%;
+        }
+        .span_9 {
+            width:75.0%;
+        }
+        .span_10 {
+            width:83.3333333333%;
+        }
+        .span_11 {
+            width:91.6666666667%;
+        }
+        .span_12,
+        .header {
+            width:100%;
+            height: 50px;
+            margin-left:0;
+        }
+        .span_12,
+        .footer {
+            width:100%;
+            height: 100px;
+            margin-left:0;
+        }
+    }
+
+/* Arriba todo lo response y los tamaños; para no mezclarlos */
+
+/* Estilos */
+
+            /* Estilos generales de letras */
+
+            h1{
+                font-family: 'Lustria', serif;
+            }
+
+            p{
+                font-family: 'Lato', sans-serif;
+                font-size: 1em;
+            }
+
+            .hover a{
+                 
+            }
+
+            /* Malla */
+
+            .transparencia{
+                background-repeat: repeat;
+                overflow: hidden;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 0.3;
+                z-index: 2;
+            }
+
+            /* Imagen responsive */
+
+            img{
+                display: block;
+                height: 100%;
+                width: auto;
+            }
+            
+            /* Estilo imagen principal */
+
+            .portal{
+                background-repeat: no-repeat;
+                position: relative;
+                height: 100%;
+                left: -15px;
+                max-width: 100%;
+                z-index: 0;
+            }
+
+           /* Header */
+
+           .header{
+                background-color: #000;
+                vertical-align: text-bottom;
+           }
+
+           .headerarrow{
+                position: absolute;
+                left: 50px;
+                width: 40px;
+                height: 75px;
+                z-index: 5;
+                background-color: #ea8744;
+                border: 1px solid #e35c35;
+                vertical-align: text-bottom;
+            }
+
+            .headerarrowdown{
+                position: relative;
+                top: 75px;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 19px solid #e35c35;
+           }
+
+           .main_content{
+                text-align: center;
+           }
+
+            /* Cuerpo */
+
+            .navigation{
+                background-color: #000;
+                height: 100%;
+                width: 100%;
+                color: #fa6900;
+                text-align: center;
+            }
+
+            .icon1{
+                position: relative;
+                background-color: #e35c35;
+                border-radius: 40px 40px 40px 40px;
+                height: 50px;
+                width: 50px;
+                padding: 10px;
+                top: 0px;
+            }
+                
+            /* Media */
+
+            .media_block{
+                position: relative;
+                background-color: #000000;                
+                width: 100%;
+                height:100%;
+                padding: 5px;
+            }
+
+            .ico{
+                position: relative;
+                width: 30%;
+                height: 100%;
+                background-color: #fff;
+            }
+
+            .text{
+                position: relative;
+                width: 70%;
+                height: 100%;
+                background-color: #777;
+            }
+        
