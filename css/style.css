@@ -29,7 +29,8 @@ html,
 div {
      margin: 0;
      padding:0;
- }
+     background-color: #000;
+    }
  
 /*
 Page is our center aligned 95% width container. We have set it's 'position' as relative
@@ -42,7 +43,7 @@ the gridpak.js file to use '.page' as it's container.
      overflow:hidden;
      position:relative;
      background-color: #000000;
-}
+    }
 
 /* Reusable column setup */
 .col {
@@ -460,10 +461,10 @@ the gridpak.js file to use '.page' as it's container.
 
             /* jQuery Stuff */
 
-            .highlighted {
-            -webkit-box-shadow: 0 0 8px #FFD700;
-            -moz-box-shadow: 0 0 8px #FFD700;
-            box-shadow: 0 0 8px #FFD700;
-            cursor:pointer;
+            /*
+            #pers{
+                background-color: #777;
+                float: center;
+                top: 500px;
             }
 
