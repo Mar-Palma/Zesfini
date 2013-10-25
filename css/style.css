@@ -1,97 +1,10 @@
-@font-face {
-    font-family: 'icons';
-    src:url('fonts/icons.eot');
-    src:url('fonts/icons.eot?#iefix') format('embedded-opentype'),
-        url('fonts/icons.ttf') format('truetype'),
-        url('fonts/icons.woff') format('woff'),
-        url('fonts/icons.svg#icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
-[class*="ico"] {
-    font-family: 'icons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    font-size: 30px;
-    
-    /* Enable Ligatures ================ */
-    -webkit-font-feature-settings: "liga";
-    -moz-font-feature-settings: "liga=1";
-    -moz-font-feature-settings: "liga";
-    -ms-font-feature-settings: "liga" 1;
-    -o-font-feature-settings: "liga";
-    font-feature-settings: "liga";
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 35px;
 }
-
-.icoquill:before {
-    content: "\e600";
-}
-.icomusic:before {
-    content: "\e601";
-}
-.icoconnection:before {
-    content: "\e602";
-}
-.icolastfm:before {
-    content: "\e603";
-}
-.icohome:before {
-    content: "\e604";
-}
-.icobook:before {
-    content: "\e605";
-}
-.icotwitter:before {
-    content: "\e606";
-}
-.icowi-fi:before {
-    content: "\e607";
-}
-.icotick:before {
-    content: "\e608";
-}
-.icotimes:before {
-    content: "\e609";
-}
-.icochart-bar:before {
-    content: "\e60a";
-}
-.icoinfo-large:before {
-    content: "\e60b";
-}
-.icosocial-last-fm:before {
-    content: "\e60c";
-}
-.icosocial-skype:before {
-    content: "\e60d";
-}
-.icosocial-twitter:before {
-    content: "\e60e";
-}
-.icopin:before {
-    content: "\e60f";
-}
-.icosort-numerically:before {
-    content: "\e610";
-}
-.icosort-alphabetically:before {
-    content: "\e611";
-}
-.icoinput-checked:before {
-    content: "\e612";
-}
-
-
-/* Fin de Icons */
 
  /* Reset de estilos*/
 
@@ -101,8 +14,7 @@
        border: 0;
        list-style:none;
        text-decoration:none;
-       
- }
+}
 
 
 /*
@@ -126,10 +38,10 @@ the gridpak.js file to use '.page' as it's container.
 */
 .page {
      margin: 0 auto;
-     max-width: 100%;
+     max-width: 98%;
      overflow:hidden;
      position:relative;
-     background-color: #000;
+     background-color: #000000;
 }
 
 /* Reusable column setup */
@@ -142,7 +54,7 @@ the gridpak.js file to use '.page' as it's container.
     -moz-background-clip:padding-box !important;
     -webkit-background-clip:padding-box !important;
     background-clip:padding-box !important;
-    background: #777;
+    background: #000000;
 
 	margin-bottom: 12px;
 }
@@ -168,6 +80,10 @@ the gridpak.js file to use '.page' as it's container.
             height:100px;
         }
         
+        .zocial-{
+            font-size: 20px;
+        }
+
         .span_6,
         .header{
             width: 100%;
@@ -176,11 +92,11 @@ the gridpak.js file to use '.page' as it's container.
         }
 
         .main_content{
-            font-size:  0.75em;
+            font-size:  0.4em;
         }
 
         .navigation{
-            font-size: 0.5em;
+            font-size: 0.7em;
         }
 
         .icon1{
@@ -188,10 +104,13 @@ the gridpak.js file to use '.page' as it's container.
             width: 30px;
         }
 
-        .main_content p,
-        .media_block p{
+        .main_content p,{
             font-size:  0.3em;
             color:#000000;
+        }
+
+        .media_block p{
+            font-size:  0.7em;
         }
          
         .span_1 {
@@ -220,22 +139,28 @@ the gridpak.js file to use '.page' as it's container.
     @media screen and (min-width: 320px) and (max-width: 919px) {
         
         .col {
-            margin-left:2%;
+            margin-left:1%;
         	padding:0 2%;
         }
         
         .row .col:first-child {
             margin-left:0;
         }
+
+        .zocial-{
+            font-size: 25px;
+        }
         
         .main_content{
             font-size: 3.5em;
         }
 
-        .main_content p,
-        .media_block p{
+        .main_content p{
             font-size:  0.2em;
-            color:#000000;
+        }
+
+        .media_block p{
+            font-size: 0.8em;
         }
 
         .icon1{
@@ -250,8 +175,9 @@ the gridpak.js file to use '.page' as it's container.
         .span_2,
         .media_block {
             width:32.0%;
-            height: 250px;
+            height: 200px;
         }
+
         .navigation {
             width:100%;
             height: 300px;
@@ -377,7 +303,7 @@ the gridpak.js file to use '.page' as it's container.
         .span_12,
         .footer {
             width:100%;
-            height: 100px;
+            height: 50px;
             margin-left:0;
         }
     }
@@ -397,17 +323,25 @@ the gridpak.js file to use '.page' as it's container.
                 font-size: 1em;
             }
 
-            /* Malla */
+            a:link {
+                text-decoration:none;
+                color:#cf734f;
+            } 
+            
+            a:visited {
+                text-decoration:none;
+                color:#feee00;
+            } 
 
-            .transparencia{
-                background-repeat: repeat;
-                overflow: hidden;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                opacity: 0.3;
-                z-index: 2;
-            }
+            a:active {
+                text-decoration:none;
+                color:#fa6900;
+            } 
+
+            a:hover {
+                text-decoration:underline;
+                color:#f9b248;
+            } 
 
             /* Imagen responsive */
 
@@ -419,7 +353,7 @@ the gridpak.js file to use '.page' as it's container.
 
             img{
                 display: block;
-                margin:auto;
+                margin: auto;
                 height: 100%;
                 width: auto;
             }
@@ -439,23 +373,25 @@ the gridpak.js file to use '.page' as it's container.
 
            .header{
                 background-color: #000;
-                vertical-align: text-bottom;
+                text-align: right;
+                color: #ea8744;
            }
 
            .headerarrow{
                 position: absolute;
+                text-align: center;
                 left: 50px;
                 width: 40px;
                 height: 75px;
                 z-index: 5;
                 background-color: #ea8744;
                 border: 1px solid #e35c35;
-                vertical-align: text-bottom;
+                color: #e35c35;
             }
 
             .headerarrowdown{
                 position: relative;
-                top: 75px;
+                top: 55px;
                 border-left: 20px solid transparent;
                 border-right: 20px solid transparent;
                 border-top: 19px solid #e35c35;
@@ -472,10 +408,9 @@ the gridpak.js file to use '.page' as it's container.
                 height: 100%;
                 width: 100%;
                 color: #fa6900;
-                text-align: center;
             }
 
-            .icon1{
+            .ic1{
                 position: relative;
                 background-color: #e35c35;
                 border-radius: 40px 40px 40px 40px;
@@ -484,12 +419,22 @@ the gridpak.js file to use '.page' as it's container.
                 padding: 10px;
                 top: 0px;
             }
+
+            .ico{
+                float: left;
+                position: relative;
+                height: 120px;
+                width: auto;
+                padding: 15px;
+                padding-top: 35px;
+                text-align: center;
+            }
                 
             /* Media */
 
             .media_block{
                 position: relative;
-                padding: 30px;
+                padding: 10px;
                 text-align: center;
                 background-color: #000000;
                 color: #e35c35; 
@@ -501,11 +446,15 @@ the gridpak.js file to use '.page' as it's container.
                 height: 100%;
                 margin: 40px;
             }
-
-            .imagen{
-                position: relative;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-            }
         
+            /* Footer */
+
+            .footer{
+                 overflow: hidden;
+                 background-color: #000000;
+                 color: #e35c35;
+                 position: relative;
+                 text-align: center;
+            }
+
+
